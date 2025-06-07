@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoElite - Tienda de Autos Premium</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">AutoElite</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <button class="menu-toggle">☰</button>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+          🛒 <span id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container">
+          <h2>Encuentra tu Auto Soñado</h2>
+          <p>
+            Explora nuestra selección premium de vehículos de lujo y rendimiento
+          </p>
+          <a href="#tienda" class="btn">Comprar Ahora</a>
+        </div>
+      </section>
+
+      <section id="tienda" class="products">
+        <div class="container">
+          <h2>Nuestros Autos</h2>
+          <div class="filters">
+            <div>
+              <label for="brand-filter">Marca:</label>
+              <select id="brand-filter">
+                <option value="">Todas</option>
+              </select>
+            </div>
+            <div>
+              <label for="price-filter">Precio Máximo:</label>
+              <input
+                type="range"
+                id="price-filter"
+                min="0"
+                max="500000"
+                step="50000"
+                value="500000"
+              />
+              <span id="price-value">$500,000</span>
+            </div>
+          </div>
+          <div id="product-grid" class="product-grid">
+            <!-- Products will be added here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="about">
+        <div class="container">
+          <h2>Sobre Nosotros</h2>
+          <div class="benefits">
+            <div class="benefit">
+              <h3>Calidad Garantizada</h3>
+              <p>
+                Todos nuestros vehículos pasan por una rigurosa inspección y
+                certificación
+              </p>
+            </div>
+            <div class="benefit">
+              <h3>Precios Competitivos</h3>
+              <p>Obtenga el mejor valor para vehículos premium en el mercado</p>
+            </div>
+            <div class="benefit">
+              <h3>Soporte Experto</h3>
+              <p>
+                Nuestro equipo de especialistas está siempre listo para ayudarlo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2>Contacto</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p>📍 123 Calle Lujo, Ciudad Automotriz</p>
+              <p>📞 +1 (555) 123-4567</p>
+              <p>✉️ info@autoelite.com</p>
+            </div>
+            <form class="contact-form">
+              <input type="text" placeholder="Tu Nombre" required />
+              <input type="email" placeholder="Tu Email" required />
+              <textarea placeholder="Tu Mensaje" required></textarea>
+              <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="cart" class="cart">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button onclick="toggleCart()" class="close-btn">✕</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be added here by JavaScript -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span>$<span id="cart-total">0</span></span>
+        </div>
+        <button id="checkout-btn" class="btn" onclick="showCheckout()">
+          Proceder al Pago
+        </button>
+      </div>
+    </div>
+
+    <div id="checkout" class="checkout">
+      <div class="checkout-header">
+        <h2>Finalizar Compra</h2>
+        <button onclick="hideCheckout()" class="close-btn">✕</button>
+      </div>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Nombre Completo</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Dirección</label>
+          <input type="text" id="address" required />
+        </div>
+        <div class="form-group">
+          <label for="card">Número de Tarjeta</label>
+          <input
+            type="text"
+            id="card"
+            pattern="[0-9]{16}"
+            placeholder="1234567890123456"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="expiry">Fecha de Expiración</label>
+          <input
+            type="text"
+            id="expiry"
+            pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+            placeholder="MM/YY"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input
+            type="text"
+            id="cvv"
+            pattern="[0-9]{3}"
+            placeholder="123"
+            required
+          />
+        </div>
+        <button type="submit" class="btn">Completar Compra</button>
+      </form>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 AutoElite. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
