@@ -546,7 +546,7 @@ function setupEventListeners() {
       if (carrito.length > 0) {
         showSection("checkout");
       } else {
-        showToast("Your cart is empty. Add some products first.");
+        showToast("Tu carrito esta vacio, agrega productos antes de comprar.");
       }
     });
   }
