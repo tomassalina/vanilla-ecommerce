@@ -5,8 +5,8 @@ const cars = [
     brand: "Mercedes-Benz",
     year: 2023,
     price: 110000,
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-1.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ const cars = [
     brand: "BMW",
     year: 2023,
     price: 95000,
-    image:
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-2.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 3,
@@ -23,8 +23,8 @@ const cars = [
     brand: "Audi",
     year: 2022,
     price: 88000,
-    image:
-      "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-3.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 4,
@@ -32,8 +32,8 @@ const cars = [
     brand: "Porsche",
     year: 2023,
     price: 120000,
-    image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-4.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 5,
@@ -41,8 +41,8 @@ const cars = [
     brand: "Tesla",
     year: 2023,
     price: 85000,
-    image:
-      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-5.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ const cars = [
     brand: "Lamborghini",
     year: 2022,
     price: 280000,
-    image:
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-6.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 7,
@@ -59,8 +59,8 @@ const cars = [
     brand: "Ferrari",
     year: 2021,
     price: 330000,
-    image:
-      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-7.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 8,
@@ -68,8 +68,8 @@ const cars = [
     brand: "Land Rover",
     year: 2023,
     price: 78000,
-    image:
-      "https://images.unsplash.com/photo-1539788816080-8bdd722d8c22?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-8.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 9,
@@ -77,8 +77,8 @@ const cars = [
     brand: "Bentley",
     year: 2022,
     price: 220000,
-    image:
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-9.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 10,
@@ -86,8 +86,8 @@ const cars = [
     brand: "Lexus",
     year: 2023,
     price: 78000,
-    image:
-      "https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-10.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 11,
@@ -95,8 +95,8 @@ const cars = [
     brand: "Maserati",
     year: 2022,
     price: 110000,
-    image:
-      "https://images.unsplash.com/photo-1605515298946-d0573716e528?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-11.webp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 12,
@@ -104,8 +104,8 @@ const cars = [
     brand: "Jaguar",
     year: 2023,
     price: 75000,
-    image:
-      "https://images.unsplash.com/photo-1566473965997-3de9c817e938?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-12.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 13,
@@ -113,8 +113,8 @@ const cars = [
     brand: "Aston Martin",
     year: 2022,
     price: 205000,
-    image:
-      "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-13.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 14,
@@ -122,8 +122,8 @@ const cars = [
     brand: "Rolls-Royce",
     year: 2023,
     price: 340000,
-    image:
-      "https://images.unsplash.com/photo-1631295868223-63265b40d9cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-14.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 15,
@@ -131,8 +131,8 @@ const cars = [
     brand: "McLaren",
     year: 2022,
     price: 310000,
-    image:
-      "https://images.unsplash.com/photo-1621135802920-133df287f89c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-15.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 16,
@@ -140,8 +140,8 @@ const cars = [
     brand: "Bugatti",
     year: 2021,
     price: 3000000,
-    image:
-      "https://images.unsplash.com/photo-1600712242805-5f78671b24da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-16.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 17,
@@ -149,8 +149,8 @@ const cars = [
     brand: "Cadillac",
     year: 2023,
     price: 82000,
-    image:
-      "https://images.unsplash.com/photo-1549275301-c9221c691387?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-17.jpg",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 18,
@@ -158,8 +158,8 @@ const cars = [
     brand: "Chevrolet",
     year: 2023,
     price: 65000,
-    image:
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-18.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 19,
@@ -167,8 +167,8 @@ const cars = [
     brand: "Ford",
     year: 2023,
     price: 45000,
-    image:
-      "https://images.unsplash.com/photo-1584345604476-8ec5f82d661c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-19.webp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     id: 20,
@@ -176,87 +176,236 @@ const cars = [
     brand: "Dodge",
     year: 2022,
     price: 72000,
-    image:
-      "https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "./images/cars/car-20.avif",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
 ];
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let seccionActual = "home";
 let filteredCars = [...cars];
 
-document.addEventListener("DOMContentLoaded", () => {
-  setupBrandFilter();
+const carritoCount = document.getElementById("contador-carrito");
+const productosContainer = document.getElementById("contenedor-productos");
+const carritoItems = document.getElementById("elementos-carrito");
+const carritoTotal = document.getElementById("total-carrito");
+const botonFinalizar = document.getElementById("boton-finalizar");
+const formularioCompra = document.getElementById("formulario-compra");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const featuredCarsContainer = document.getElementById("featured-cars");
+const brandFilters = document.getElementById("brand-filters");
+const yearFilters = document.getElementById("year-filters");
+const priceFilter = document.getElementById("price-filter");
+const priceValue = document.getElementById("price-value");
+const resetFilters = document.getElementById("reset-filters");
+const sortSelect = document.getElementById("sort");
+const summaryItems = document.getElementById("summary-items");
+
+function init() {
+  renderFeaturedCars();
   renderProducts();
-  updateCartCount();
-  setupMobileMenu();
-  setupPriceFilter();
-  setupFormValidation();
-});
-
-function setupBrandFilter() {
-  const brandFilter = document.getElementById("brand-filter");
-  const brands = [...new Set(cars.map((car) => car.brand))];
-
-  brands.forEach((brand) => {
-    const option = document.createElement("option");
-    option.value = brand;
-    option.textContent = brand;
-    brandFilter.appendChild(option);
-  });
-
-  brandFilter.addEventListener("change", filterProducts);
+  setupFilters();
+  setupEventListeners();
+  updateCartUI();
 }
 
-function setupPriceFilter() {
-  const priceFilter = document.getElementById("price-filter");
-  const priceValue = document.getElementById("price-value");
-
-  priceFilter.addEventListener("input", function () {
-    priceValue.textContent = "$" + Number.parseInt(this.value).toLocaleString();
-    filterProducts();
-  });
+function saveCarritoToStorage() {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-function filterProducts() {
-  const brandFilter = document.getElementById("brand-filter").value;
-  const priceFilter = Number.parseInt(
-    document.getElementById("price-filter").value
-  );
+function showToast(message, duration = 3000) {
+  const toastContainer = document.getElementById("toast-container");
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.textContent = message;
 
-  filteredCars = cars.filter((car) => {
-    const brandMatch = brandFilter === "" || car.brand === brandFilter;
-    const priceMatch = car.price <= priceFilter;
-    return brandMatch && priceMatch;
+  toastContainer.appendChild(toast);
+
+  toast.offsetHeight;
+
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, duration);
+}
+
+function showSection(sectionId) {
+  document.querySelectorAll("section").forEach((section) => {
+    section.classList.remove("active");
   });
 
-  renderProducts();
+  document.getElementById(sectionId).classList.add("active");
+  seccionActual = sectionId;
+
+  window.scrollTo(0, 0);
+
+  if (navLinks.classList.contains("active")) {
+    navLinks.classList.remove("active");
+  }
+}
+
+function renderFeaturedCars() {
+  if (!featuredCarsContainer) return;
+
+  const featuredCars = cars.slice(0, 4);
+
+  featuredCarsContainer.innerHTML = featuredCars
+    .map(
+      (car) => `
+    <div class="car-card">
+      <div class="car-image" style="background-image: url('${
+        car.image
+      }')"></div>
+      <div class="car-details">
+        <h3 class="car-title">${car.name}</h3>
+        <p class="car-price">$${car.price.toLocaleString()}</p>
+        <div class="car-meta">
+          <span>${car.brand}</span>
+          <span>${car.year}</span>
+        </div>
+        <button class="btn" onclick="addToCart(${
+          car.id
+        })">Agregar al carrito</button>
+      </div>
+    </div>
+  `
+    )
+    .join("");
 }
 
 function renderProducts() {
-  const productGrid = document.getElementById("product-grid");
+  if (!productosContainer) return;
 
-  productGrid.innerHTML = "";
-
-  filteredCars.forEach((car) => {
-    const productCard = document.createElement("div");
-    productCard.className = "product-card";
-
-    productCard.innerHTML = `
-      <div class="product-image" style="background-image: url('${
+  productosContainer.innerHTML = filteredCars
+    .map(
+      (car) => `
+    <div class="car-card">
+      <div class="car-image" style="background-image: url('${
         car.image
       }')"></div>
-      <div class="product-details">
-        <h3>${car.name}</h3>
-        <p>${car.brand} | ${car.year}</p>
-        <p class="product-price">$${car.price.toLocaleString()}</p>
+      <div class="car-details">
+        <h3 class="car-title">${car.name}</h3>
+        <p class="car-price">$${car.price.toLocaleString()}</p>
+        <div class="car-meta">
+          <span>${car.brand}</span>
+          <span>${car.year}</span>
+        </div>
         <button class="btn" onclick="addToCart(${
           car.id
-        })">Añadir al Carrito</button>
+        })">Agregar al carrito</button>
       </div>
-    `;
+    </div>
+  `
+    )
+    .join("");
+}
 
-    productGrid.appendChild(productCard);
+function setupFilters() {
+  if (!brandFilters || !yearFilters || !priceFilter) return;
+
+  const brands = [...new Set(cars.map((car) => car.brand))];
+
+  brandFilters.innerHTML = brands
+    .map(
+      (brand) => `
+    <div class="filter-option">
+      <input type="checkbox" id="brand-${brand}" name="brand" value="${brand}">
+      <label for="brand-${brand}">${brand}</label>
+    </div>
+  `
+    )
+    .join("");
+
+  const years = [...new Set(cars.map((car) => car.year))];
+
+  yearFilters.innerHTML = years
+    .map(
+      (year) => `
+    <div class="filter-option">
+      <input type="checkbox" id="year-${year}" name="year" value="${year}">
+      <label for="year-${year}">${year}</label>
+    </div>
+  `
+    )
+    .join("");
+
+  priceFilter.addEventListener("input", function () {
+    priceValue.textContent = `$${Number.parseInt(this.value).toLocaleString()}`;
+    applyFilters();
   });
+
+  document
+    .querySelectorAll('.filter-option input[type="checkbox"]')
+    .forEach((checkbox) => {
+      checkbox.addEventListener("change", applyFilters);
+    });
+
+  resetFilters.addEventListener("click", () => {
+    document
+      .querySelectorAll('.filter-option input[type="checkbox"]')
+      .forEach((checkbox) => {
+        checkbox.checked = false;
+      });
+
+    priceFilter.value = 500000;
+    priceValue.textContent = `$${Number.parseInt(
+      priceFilter.value
+    ).toLocaleString()}`;
+
+    sortSelect.value = "default";
+
+    applyFilters();
+  });
+
+  sortSelect.addEventListener("change", applyFilters);
+}
+
+function applyFilters() {
+  const selectedBrands = Array.from(
+    document.querySelectorAll('input[name="brand"]:checked')
+  ).map((input) => input.value);
+
+  const selectedYears = Array.from(
+    document.querySelectorAll('input[name="year"]:checked')
+  ).map((input) => Number.parseInt(input.value));
+
+  const maxPrice = Number.parseInt(priceFilter.value);
+
+  filteredCars = cars.filter((car) => {
+    const brandMatch =
+      selectedBrands.length === 0 || selectedBrands.includes(car.brand);
+    const yearMatch =
+      selectedYears.length === 0 || selectedYears.includes(car.year);
+    const priceMatch = car.price <= maxPrice;
+
+    return brandMatch && yearMatch && priceMatch;
+  });
+
+  const sortValue = sortSelect.value;
+
+  switch (sortValue) {
+    case "price-low":
+      filteredCars.sort((a, b) => a.price - b.price);
+      break;
+    case "price-high":
+      filteredCars.sort((a, b) => b.price - a.price);
+      break;
+    case "name-asc":
+      filteredCars.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    case "name-desc":
+      filteredCars.sort((a, b) => b.name.localeCompare(a.name));
+      break;
+    default:
+      break;
+  }
+
+  renderProducts();
 }
 
 function addToCart(carId) {
@@ -264,12 +413,12 @@ function addToCart(carId) {
 
   if (!car) return;
 
-  const cartItem = cart.find((item) => item.id === carId);
+  const carritoItem = carrito.find((item) => item.id === carId);
 
-  if (cartItem) {
-    cartItem.quantity++;
+  if (carritoItem) {
+    carritoItem.quantity++;
   } else {
-    cart.push({
+    carrito.push({
       id: car.id,
       name: car.name,
       price: car.price,
@@ -278,160 +427,152 @@ function addToCart(carId) {
     });
   }
 
-  localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
-  showToast(`${car.name} añadido al carrito`);
-}
-
-function updateCartCount() {
-  const cartCount = document.getElementById("cart-count");
-  const count = cart.reduce((sum, item) => sum + item.quantity, 0);
-  cartCount.textContent = count;
-}
-
-function renderCartItems() {
-  const cartItems = document.getElementById("cart-items");
-  const cartTotal = document.getElementById("cart-total");
-
-  cartItems.innerHTML = "";
-
-  if (cart.length === 0) {
-    cartItems.innerHTML = "<p>Tu carrito está vacío</p>";
-    cartTotal.textContent = "0";
-    return;
-  }
-
-  let total = 0;
-
-  cart.forEach((item) => {
-    const cartItem = document.createElement("div");
-    cartItem.className = "cart-item";
-
-    const itemTotal = item.price * item.quantity;
-    total += itemTotal;
-
-    cartItem.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
-      <div class="cart-item-details">
-        <h3 class="cart-item-title">${item.name}</h3>
-        <p class="cart-item-price">$${item.price.toLocaleString()}</p>
-        <div class="cart-item-quantity">
-          <button class="quantity-btn" onclick="decrementQuantity(${
-            item.id
-          })">-</button>
-          <span>${item.quantity}</span>
-          <button class="quantity-btn" onclick="incrementQuantity(${
-            item.id
-          })">+</button>
-          <button class="btn" onclick="removeFromCart(${
-            item.id
-          })">Eliminar</button>
-        </div>
-      </div>
-    `;
-
-    cartItems.appendChild(cartItem);
-  });
-
-  cartTotal.textContent = total.toLocaleString();
+  updateCartUI();
+  saveCarritoToStorage();
+  showToast(`${car.name} agregado al carrito!`);
 }
 
 function incrementQuantity(carId) {
-  const cartItem = cart.find((item) => item.id === carId);
+  const carritoItem = carrito.find((item) => item.id === carId);
 
-  if (cartItem) {
-    cartItem.quantity++;
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCartItems();
-    updateCartCount();
+  if (carritoItem) {
+    carritoItem.quantity++;
+    updateCartUI();
+    saveCarritoToStorage();
   }
 }
 
 function decrementQuantity(carId) {
-  const cartItem = cart.find((item) => item.id === carId);
+  const carritoItem = carrito.find((item) => item.id === carId);
 
-  if (cartItem && cartItem.quantity > 1) {
-    cartItem.quantity--;
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCartItems();
-    updateCartCount();
+  if (carritoItem && carritoItem.quantity > 1) {
+    carritoItem.quantity--;
+    updateCartUI();
+    saveCarritoToStorage();
   }
 }
 
 function removeFromCart(carId) {
-  cart = cart.filter((item) => item.id !== carId);
-  localStorage.setItem("cart", JSON.stringify(cart));
-  renderCartItems();
-  updateCartCount();
+  carrito = carrito.filter((item) => item.id !== carId);
+  updateCartUI();
+  saveCarritoToStorage();
 }
 
-function toggleCart() {
-  const cart = document.getElementById("cart");
-  const overlay = document.getElementById("overlay");
+function updateCartUI() {
+  carritoCount.textContent = carrito.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
 
-  cart.classList.toggle("active");
-  overlay.classList.toggle("active");
-
-  if (cart.classList.contains("active")) {
-    renderCartItems();
-  }
-}
-
-function showCheckout() {
-  if (cart.length === 0) {
-    showToast("Tu carrito está vacío");
-    return;
-  }
-
-  const cartElement = document.getElementById("cart");
-  const checkout = document.getElementById("checkout");
-
-  cartElement.classList.remove("active");
-  checkout.classList.add("active");
-}
-
-function hideCheckout() {
-  const checkout = document.getElementById("checkout");
-  const overlay = document.getElementById("overlay");
-
-  checkout.classList.remove("active");
-  overlay.classList.remove("active");
-}
-
-function setupMobileMenu() {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".menu");
-
-  menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
-}
-
-function showToast(message) {
-  const toast = document.getElementById("toast");
-
-  toast.textContent = message;
-  toast.classList.add("show");
-
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 3000);
-}
-
-function setupFormValidation() {
-  const checkoutForm = document.getElementById("checkout-form");
-
-  checkoutForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    if (this.checkValidity()) {
-      cart = [];
-      localStorage.setItem("cart", JSON.stringify(cart));
-      updateCartCount();
-      hideCheckout();
-      showToast("¡Compra realizada con éxito!");
+  if (carritoItems) {
+    if (carrito.length === 0) {
+      carritoItems.innerHTML =
+        '<p class="empty-cart">Tu carrito esta vacío</p>';
     } else {
-      showToast("Por favor completa todos los campos correctamente");
+      carritoItems.innerHTML = carrito
+        .map(
+          (item) => `
+        <div class="cart-item">
+          <img src="${item.image}" alt="${item.name}">
+          <div class="cart-item-info">
+            <h3>${item.name}</h3>
+            <p>$${item.price.toLocaleString()}</p>
+            <div class="controles-cantidad">
+              <button class="boton-cantidad" onclick="decrementQuantity(${
+                item.id
+              })">-</button>
+              <span>${item.quantity}</span>
+              <button class="boton-cantidad" onclick="incrementQuantity(${
+                item.id
+              })">+</button>
+            </div>
+            <button class="btn" onclick="removeFromCart(${
+              item.id
+            })">Eliminar</button>
+          </div>
+        </div>
+      `
+        )
+        .join("");
     }
-  });
+  }
+
+  const total = carrito.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
+  if (carritoTotal) {
+    carritoTotal.textContent = total.toLocaleString();
+  }
+
+  if (summaryItems) {
+    summaryItems.innerHTML = carrito
+      .map(
+        (item) => `
+      <div class="summary-item">
+        <div class="summary-item-details">
+          <h4 class="summary-item-title">${item.name}</h4>
+          <p class="summary-item-price">$${item.price.toLocaleString()}</p>
+          <p class="summary-item-quantity">Cantidad: ${item.quantity}</p>
+        </div>
+      </div>
+    `
+      )
+      .join("");
+
+    const subtotal = total;
+    const tax = subtotal * 0.1;
+    const finalTotal = subtotal + tax;
+
+    document.querySelector(
+      ".summary-subtotal"
+    ).textContent = `$${subtotal.toLocaleString()}`;
+    document.querySelector(
+      ".summary-tax"
+    ).textContent = `$${tax.toLocaleString()}`;
+    document.querySelector(
+      ".summary-total"
+    ).textContent = `$${finalTotal.toLocaleString()}`;
+  }
 }
+
+function setupEventListeners() {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  if (botonFinalizar) {
+    botonFinalizar.addEventListener("click", () => {
+      if (carrito.length > 0) {
+        showSection("checkout");
+      } else {
+        showToast("Your cart is empty. Add some products first.");
+      }
+    });
+  }
+
+  if (formularioCompra) {
+    formularioCompra.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      showToast(
+        "¡Gracias por tu compra! Estamos procesando tu pedido...",
+        3000
+      );
+
+      setTimeout(() => {
+        const orderNumber = "ORD-" + Math.floor(Math.random() * 1000000);
+
+        carrito = [];
+        updateCartUI();
+        saveCarritoToStorage();
+
+        showToast(`Pedido N° #${orderNumber} realizado con éxito!`, 5000);
+
+        showSection("home");
+      }, 3000);
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);

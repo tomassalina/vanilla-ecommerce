@@ -3,193 +3,365 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoElite - Tienda de Autos Premium</title>
+    <title>AutoElite - Marketplace de Autos Premium</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">AutoElite</h1>
+        <div class="logo">
+          <a href="/">
+            <h1>AutoElite</h1>
+          </a>
+        </div>
         <nav>
-          <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#tienda">Tienda</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+          <div class="menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('shop')">Comprar</a></li>
+            <li><a href="#" onclick="showSection('about')">Acerca de</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contacto</a></li>
           </ul>
-          <button class="menu-toggle">☰</button>
         </nav>
-        <div class="cart-icon" onclick="toggleCart()">
-          🛒 <span id="cart-count">0</span>
+        <div class="cart-icon" onclick="showSection('cart')">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-count" id="contador-carrito">0</span>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="inicio" class="hero">
-        <div class="container">
-          <h2>Encuentra tu Auto Soñado</h2>
-          <p>
-            Explora nuestra selección premium de vehículos de lujo y rendimiento
-          </p>
-          <a href="#tienda" class="btn">Comprar Ahora</a>
-        </div>
-      </section>
-
-      <section id="tienda" class="products">
-        <div class="container">
-          <h2>Nuestros Autos</h2>
-          <div class="filters">
-            <div>
-              <label for="brand-filter">Marca:</label>
-              <select id="brand-filter">
-                <option value="">Todas</option>
-              </select>
-            </div>
-            <div>
-              <label for="price-filter">Precio Máximo:</label>
-              <input
-                type="range"
-                id="price-filter"
-                min="0"
-                max="500000"
-                step="50000"
-                value="500000"
-              />
-              <span id="price-value">$500,000</span>
+      <section id="home" class="active">
+        <div class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h2>Encontrá el auto de tus sueños</h2>
+              <p>
+                Descubrí nuestra exclusiva selección de vehículos de lujo y alta
+                gama
+              </p>
+              <a href="#" class="btn" onclick="showSection('shop')"
+                >Ver catálogo</a
+              >
             </div>
           </div>
-          <div id="product-grid" class="product-grid">
-            <!-- Products will be added here by JavaScript -->
+        </div>
+
+        <div class="featured">
+          <div class="container">
+            <h2 class="section-title">Vehículos destacados</h2>
+            <div class="featured-cars" id="featured-cars"></div>
+            <div class="view-more">
+              <a href="#" class="btn" onclick="showSection('shop')"
+                >Ver todos los vehículos</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="nosotros" class="about">
+      <section id="shop">
+        <div class="shop-header">
+          <div class="container">
+            <h2>Nuestra Colección</h2>
+            <p>
+              Explora nuestra selección premium de vehículos de lujo y alto
+              rendimiento
+            </p>
+          </div>
+        </div>
+
+        <div class="shop-content">
+          <div class="container">
+            <div class="filters">
+              <div class="filter-group">
+                <h3>Marca</h3>
+                <div class="filter-options" id="brand-filters"></div>
+              </div>
+              <div class="filter-group">
+                <h3>Rango de precio</h3>
+                <div class="price-range">
+                  <input
+                    type="range"
+                    id="price-filter"
+                    min="0"
+                    max="500000"
+                    step="10000"
+                    value="500000"
+                  />
+                  <div class="price-values">
+                    <span>$0</span>
+                    <span id="price-value">$500,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-group">
+                <h3>Año</h3>
+                <div class="filter-options" id="year-filters"></div>
+              </div>
+              <button class="btn" id="reset-filters">Reset Filters</button>
+            </div>
+            <div class="products">
+              <div class="sort-options">
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                  <option value="default">Destacados</option>
+                  <option value="price-low">Precio: de menor a mayor</option>
+                  <option value="price-high">Precio: de mayor a menor</option>
+                  <option value="name-asc">Nombre: A-Z</option>
+                  <option value="name-desc">Nombre: Z-A</option>
+                </select>
+              </div>
+              <div class="product-grid" id="contenedor-productos"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
         <div class="container">
-          <h2>Sobre Nosotros</h2>
+          <h2 class="section-title">¿Por que elegir a AutoElite?</h2>
           <div class="benefits">
             <div class="benefit">
-              <h3>Calidad Garantizada</h3>
+              <span class="material-symbols-outlined">verified</span>
+              <h3>Calidad garantizada</h3>
               <p>
-                Todos nuestros vehículos pasan por una rigurosa inspección y
-                certificación
+                Todos nuestros vehículos pasan por un exhaustivo proceso de
+                inspección y certificación
               </p>
             </div>
             <div class="benefit">
-              <h3>Precios Competitivos</h3>
-              <p>Obtenga el mejor valor para vehículos premium en el mercado</p>
+              <span class="material-symbols-outlined">payments</span>
+              <h3>Precio competitivo</h3>
+              <p>Obtené el mejor valor del mercado en autos premium</p>
             </div>
             <div class="benefit">
-              <h3>Soporte Experto</h3>
+              <span class="material-symbols-outlined">support_agent</span>
+              <h3>Soporte experto</h3>
               <p>
-                Nuestro equipo de especialistas está siempre listo para ayudarlo
+                Nuestro equipo de especialistas está siempre listo para ayudarte
+                en cada paso
               </p>
+            </div>
+          </div>
+
+          <div class="testimonials">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-slider">
+              <div class="testimonial">
+                <p>
+                  "AutoElite me brindó una experiencia de compra inigualable. Su
+                  selección y atención son de primer nivel."
+                </p>
+                <div class="customer">
+                  <h4>John Davis</h4>
+                  <p>BMW M5 Owner</p>
+                </div>
+              </div>
+              <div class="testimonial">
+                <p>
+                  "Encontré el auto de mis sueños a un precio excelente. Todo el
+                  proceso fue claro, ágil y sin sorpresas."
+                </p>
+                <div class="customer">
+                  <h4>Sarah Miller</h4>
+                  <p>Mercedes S-Class Owner</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contacto" class="contact">
+      <section id="contact">
         <div class="container">
-          <h2>Contacto</h2>
+          <h2 class="section-title">Contáctanos</h2>
           <div class="contact-content">
             <div class="contact-info">
-              <p>📍 123 Calle Lujo, Ciudad Automotriz</p>
-              <p>📞 +1 (555) 123-4567</p>
-              <p>✉️ info@autoelite.com</p>
+              <div class="info-item">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>Av. del Libertador 7200, CABA, Buenos Aires</p>
+              </div>
+              <div class="info-item">
+                <span class="material-symbols-outlined">phone</span>
+                <p>+54 11 1234-5678</p>
+              </div>
+              <div class="info-item">
+                <span class="material-symbols-outlined">email</span>
+                <p>info@autoelite.com</p>
+              </div>
             </div>
             <form class="contact-form">
-              <input type="text" placeholder="Tu Nombre" required />
-              <input type="email" placeholder="Tu Email" required />
-              <textarea placeholder="Tu Mensaje" required></textarea>
-              <button type="submit" class="btn">Enviar Mensaje</button>
+              <input type="text" placeholder="Tu nombre" required />
+              <input type="email" placeholder="Tu email" required />
+              <textarea placeholder="Tu mensaje" required></textarea>
+              <button type="submit" class="btn">Enviar mensaje</button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="cart">
+        <div class="container">
+          <h2 class="section-title">Tu carrito de compras</h2>
+          <div class="cart-container">
+            <div class="cart-items" id="elementos-carrito"></div>
+            <div class="cart-summary">
+              <div class="cart-total">
+                <h3>Total del carrito</h3>
+                <div class="total-row">
+                  <span>Total:</span>
+                  <span>$<span id="total-carrito">0.00</span></span>
+                </div>
+              </div>
+              <button class="btn btn-primary" id="boton-finalizar">
+                Continuar al checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="checkout">
+        <div class="container">
+          <h2 class="section-title">Checkout</h2>
+          <div class="checkout-container">
+            <div class="checkout-form">
+              <h3>Datos de facturación</h3>
+              <form id="formulario-compra">
+                <div class="form-group">
+                  <label for="fullname">Nombre completo</label>
+                  <input type="text" id="fullname" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="address">Dirección</label>
+                  <input type="text" id="address" required />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="zip">Código Postal</label>
+                    <input type="text" id="zip" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="country">País</label>
+                  <input type="text" id="country" required />
+                </div>
+
+                <h3>Información de Pago</h3>
+                <div class="form-group">
+                  <label for="card-name">Nombre en la tarjeta</label>
+                  <input type="text" id="card-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="card-number">Número de tarjeta</label>
+                  <input
+                    type="text"
+                    id="card-number"
+                    placeholder="XXXX XXXX XXXX XXXX"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expiry">Fecha de expiración</label>
+                    <input
+                      type="text"
+                      id="expiry"
+                      placeholder="MM/YY"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">Codigo de seguridad (CVV)</label>
+                    <input type="text" id="cvv" placeholder="XXX" required />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Completar compra
+                </button>
+              </form>
+            </div>
+            <div class="order-summary">
+              <h3>Order Summary</h3>
+              <div class="summary-items" id="summary-items"></div>
+              <div class="summary-totals">
+                <div class="summary-row">
+                  <span>Subtotal</span>
+                  <span class="summary-subtotal">$0</span>
+                </div>
+                <div class="summary-row">
+                  <span>Envio</span>
+                  <span>Free</span>
+                </div>
+                <div class="summary-row">
+                  <span>Impuestos</span>
+                  <span class="summary-tax">$0</span>
+                </div>
+                <div class="summary-row total">
+                  <span>Total</span>
+                  <span class="summary-total">$0</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <div id="cart" class="cart">
-      <div class="cart-header">
-        <h2>Tu Carrito</h2>
-        <button onclick="toggleCart()" class="close-btn">✕</button>
-      </div>
-      <div id="cart-items" class="cart-items">
-        <!-- Cart items will be added here by JavaScript -->
-      </div>
-      <div class="cart-footer">
-        <div class="cart-total">
-          <span>Total:</span>
-          <span>$<span id="cart-total">0</span></span>
-        </div>
-        <button id="checkout-btn" class="btn" onclick="showCheckout()">
-          Proceder al Pago
-        </button>
-      </div>
-    </div>
-
-    <div id="checkout" class="checkout">
-      <div class="checkout-header">
-        <h2>Finalizar Compra</h2>
-        <button onclick="hideCheckout()" class="close-btn">✕</button>
-      </div>
-      <form id="checkout-form">
-        <div class="form-group">
-          <label for="name">Nombre Completo</label>
-          <input type="text" id="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-        </div>
-        <div class="form-group">
-          <label for="address">Dirección</label>
-          <input type="text" id="address" required />
-        </div>
-        <div class="form-group">
-          <label for="card">Número de Tarjeta</label>
-          <input
-            type="text"
-            id="card"
-            pattern="[0-9]{16}"
-            placeholder="1234567890123456"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="expiry">Fecha de Expiración</label>
-          <input
-            type="text"
-            id="expiry"
-            pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
-            placeholder="MM/YY"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="cvv">CVV</label>
-          <input
-            type="text"
-            id="cvv"
-            pattern="[0-9]{3}"
-            placeholder="123"
-            required
-          />
-        </div>
-        <button type="submit" class="btn">Completar Compra</button>
-      </form>
-    </div>
-
-    <div id="overlay" class="overlay"></div>
-
     <footer>
       <div class="container">
-        <p>&copy; 2023 AutoElite. Todos los derechos reservados.</p>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>AutoElite</h2>
+            <p>Marketplace de Autos Premium</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#" onclick="showSection('home')">Home</a></li>
+              <li><a href="#" onclick="showSection('shop')">Comprar</a></li>
+              <li><a href="#" onclick="showSection('about')">Acerca de</a></li>
+              <li><a href="#" onclick="showSection('contact')">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>
+              Suscribite para enterarte antes que nadie de nuevos ingresos y
+              ofertas especiales
+            </p>
+            <form>
+              <input type="email" placeholder="Tu email" required />
+              <button type="submit" class="btn">Suscríbete</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 AutoElite. Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
 
-    <div id="toast" class="toast"></div>
+    <div id="toast-container" class="toast-container"></div>
 
     <script src="main.js"></script>
   </body>
